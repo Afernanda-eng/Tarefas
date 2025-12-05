@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Minhas Tarefas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Minhas Tarefas</h1>
+
+    <div class="controls">
+      <input id="taskInput" placeholder="Digite a tarefa..." />
+
+      <select id="categorySelect">
+        <option value="pessoal">💗 Pessoal</option>
+        <option value="casa">🧹 Casa</option>
+        <option value="estudos">📚 Estudos</option>
+        <option value="trabalho">💼 Trabalho</option>
+        <option value="espiritual">🔥 Espiritual</option>
+        <option value="saude">💊 Saúde</option>
+      </select>
+
+      <input type="date" id="dateInput" />
+      <input type="time" id="timeInput" />
+
+      <button id="addBtn">Adicionar</button>
+    </div>
+
+    <input id="searchBar" placeholder="Pesquisar tarefa..." />
+
+    <div class="header-info">
+      <span id="counter"></span>
+      <button id="clearDone" class="danger">Limpar concluídas</button>
+      <button id="darkMode">🌙 Modo Escuro</button>
+    </div>
+
+    <ul id="taskList"></ul>
+
+    <div class="export-box">
+      <button id="exportBtn">Exportar JSON</button>
+      <input type="file" id="importFile" />
+      <button id="importBtn">Importar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
